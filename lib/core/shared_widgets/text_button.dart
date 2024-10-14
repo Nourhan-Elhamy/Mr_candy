@@ -13,7 +13,7 @@ final String text;
 
       onPressed: onpressed,
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8)
+          borderRadius: BorderRadius.circular(8),
       ),
       color: AppColors.lavender,
       child: Text(text,style: TextStyle(color: AppColors.white),),);
