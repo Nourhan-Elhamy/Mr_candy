@@ -20,7 +20,7 @@ class LoginBody extends StatelessWidget {
                   color: AppColors.white,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40),
-                    topRight: Radius.circular(40)
+                    topRight: Radius.circular(40),
                   )
               ),
               child: LoginForm(),
