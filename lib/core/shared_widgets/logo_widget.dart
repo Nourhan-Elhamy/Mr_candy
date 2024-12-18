@@ -9,7 +9,9 @@ class LogoWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
+
       children: [
+
       Image.asset(AppImages.splash,width: 100,height: 73,)
     ],);
   }

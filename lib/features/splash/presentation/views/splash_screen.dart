@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:mr_candy/core/utils/app_colors.dart';
 import 'package:mr_candy/core/utils/app_images.dart';
 import 'package:mr_candy/features/onboarding/presentation/views/widgets/onboarding_body.dart';
 
+import '../../../Home/presentation/views/home_screen.dart';
 import '../../../onboarding/presentation/views/onboarding_screen.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -22,8 +24,12 @@ class _SplashScreenState extends State<SplashScreen> {
       seconds: 3
     ),
         (){
-      Navigator.push(context, MaterialPageRoute(builder: (c){
-        return OnboardingScreen();
+      Navigator.push(context,MaterialPageRoute(builder: (c){
+
+        return Hive.box("setting").get("token")==null?
+        OnboardingScreen():
+            HomeScreen();
+
       }));
         }
     );

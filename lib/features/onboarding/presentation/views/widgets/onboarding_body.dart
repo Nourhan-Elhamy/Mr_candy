@@ -46,7 +46,8 @@ PageController pageController=PageController();
                   Text(AppTexts.onboardingdesc1,style: TextStyle(color: AppColors.grey),),
                   SizedBox(height: 20,),
 
-                  SmoothPageIndicator(controller: pageController,
+                  SmoothPageIndicator(
+                    controller: pageController,
                       count: onboardingmodel.length,
                     effect: ExpandingDotsEffect(
                       activeDotColor: AppColors.lavender,
@@ -58,6 +59,8 @@ PageController pageController=PageController();
                   ),
                   SizedBox(height: 20,),
                   CustomTextButton(
+
+                    text:onboardingmodel[index].textbutton,
                     onpressed: (){
 
                       if(index==onboardingmodel.length-1){
@@ -70,7 +73,7 @@ PageController pageController=PageController();
                             duration: Duration(seconds: 1), curve: Curves.linear);
                       }
                     },
-                    text:onboardingmodel[index].textbutton,
+
                     ),
 
                 ],),

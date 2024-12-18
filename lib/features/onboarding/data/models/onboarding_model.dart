@@ -21,6 +21,4 @@ List<OnboardingModel> onboardingmodel=[
   OnboardingModel(image: AppImages.image1, title: AppTexts.onboardingtitle1, descr: AppTexts.onboardingdesc1, textbutton: "التالي"),
   OnboardingModel(image: AppImages.image2, title: AppTexts.onboardingtitle2, descr: AppTexts.onboardingdesc1, textbutton: "التالي"),
   OnboardingModel(image: AppImages.image3, title: AppTexts.onboardingtitle3, descr: AppTexts.onboardingdesc1, textbutton: "ابدأ")
-
-
 ]; 
